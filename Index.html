@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palleturu Palaharam - Authentic Putharekulu</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #fff8f0; color: #4b2e2e; }
+    header { background: #8b4c39; color: white; padding: 1rem 2rem; text-align: center; }
+    nav a { margin: 0 1rem; color: white; text-decoration: none; font-weight: bold; }
+    .hero { padding: 3rem 2rem; background: url('https://example.com/putharekulu-hero.jpg') center/cover no-repeat; color: white; text-align: center; }
+    .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    .section { padding: 2rem; max-width: 1000px; margin: auto; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; }
+    .product { background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+    .product img { width: 100%; border-radius: 10px; }
+    .product h3 { margin: 0.5rem 0; }
+    .product button { background: #8b4c39; color: white; border: none; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer; margin-top: 0.5rem; }
+    footer { background: #8b4c39; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+    .contact { background: #fcebe2; padding: 2rem; text-align: center; }
+    .lang-switch { text-align: center; padding: 1rem; background: #ffe5cc; }
+    .lang-switch button { margin: 0 0.5rem; padding: 0.5rem 1rem; font-weight: bold; cursor: pointer; }
+  </style>
+  <script>
+    function orderNow(product) {
+      const phone = '918976543210';
+      const message = `Hello! I want to order: ${product}`;
+      window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Palleturu Palaharam</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <div class="lang-switch">
+    <button onclick="alert('తెలుగు మద్దతు త్వరలో వస్తుంది')">తెలుగు</button>
+    <button onclick="alert('English Mode Active')">English</button>
+  </div>
